@@ -23,7 +23,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        background-image:url('pixelcut-export (3).jpeg');
+        background-image:url('pixelcut-export\ \(3\).jpeg');
         background-size: cover;
         background-position: center;
         animation: bgZoomIn 4s ease-in-out 1 forwards;
@@ -34,7 +34,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        background-image: url('https://cloud-36h04cv0r-hack-club-bot.vercel.app/0after.png');
+        background-image: url('after.png');
         background-size: cover;
         background-position: top;
         transform: scale(2);
@@ -76,9 +76,32 @@
           fill: #fff;
           stroke-dashoffset: 0;
         }
-      }</style>
+      }
+      .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #080808;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+  
+      .hidden {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+</style>
 </head>
 <body>
+  <div class="loader">
+    <div></div>
+</div>
+
     <div class="banner">
         <div class="title">
             <svg width="279" height="121" viewBox="0 0 279 121" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,5 +110,15 @@
                 
         </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const loader = document.querySelector('.loader');
+        
+        // Set the loader to disappear after 2.5 seconds
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 2500);
+    });
+  </script>
 </body>
 </html>
