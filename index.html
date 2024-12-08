@@ -42,7 +42,7 @@
         animation: bgZoomOut 3s ease-in-out 1 forwards;
         z-index: -1;
         pointer-events: none;
-        animation-delay: 2s;
+        animation-delay: 3.5s;
       }
       @keyframes bgZoomIn {
         from {
@@ -66,7 +66,7 @@
         stroke-dasharray: 70;
         stroke-dashoffset: 100;
         animation: holdAnimation 1.7s forwards,textAnimation 3s ease-in-out 1 forwards;
-        animation-delay: 2s;
+        animation-delay: 3.5s;
       }
       @keyframes textAnimation {
         0% {
@@ -133,6 +133,6 @@
       window.onload = function () {
       setTimeout(() => {
           document.getElementById('loader').style.display = 'none';
-      }, 2500); 
+      }, 4000); 
   };</script>
 </body></html>
