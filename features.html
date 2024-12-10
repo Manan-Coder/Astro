@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro-Features</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: 'Space Mono', monospace;
+        }
+
+        body {
+            background-color    : black;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #c0e6f2;
+            padding: 1em 2em;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .navbar-title {
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.5em;
+            margin-right: 4em;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: black;
+            padding: 0.5em 1em;
+            background:    #000000;
+            border: 3px solid black;
+            border-radius: 0.4em;
+            box-shadow: 0.1em 0.1em;
+            font-size: 1rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .navbar-links a:hover {
+            transform: translate(-0.05em, -0.05em);
+            box-shadow: 0.15em 0.15em;
+        }
+
+        .navbar-links a:active {
+            transform: translate(0.05em, 0.05em);
+            box-shadow: 0.05em 0.05em;
+        }
+
+        .tutorial-section {
+            color: white;
+            margin: 5em 1em 2em 1em;
+            padding: 2em;
+            background: #000000;
+            border: 3px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tutorial-section h1 {
+            text-align: center;
+        }
+
+        .concept {
+            margin: 1.5em 0;
+        }
+
+        .concept button {
+            width: 100%;
+            background: #ffffff;
+            border: 2px solid black;
+            color: black;
+            font-size: 1.5rem;
+            font-family: inherit;
+            text-align: left;
+            padding: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 3px 3px black;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .concept button:hover {
+            transform: translate(-0.05em, -0.05em);
+            box-shadow: 4px 4px black;
+        }
+
+        .concept-content {
+            display: none;
+            margin-top: 1em;
+            background: #282c34;
+            color: #f8f8f2;
+            padding: 1.5em;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .concept-content p {
+            margin-bottom: 1em;
+            font-size: 1.2rem;
+        }
+
+        .concept-content pre {
+            background: #1d1f21;
+            color: #c5c8c6;
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: Consolas, "Courier New", monospace;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <section class="tutorial-section">
+        <h1>Features</h1>
+
+
+        <div class="concept">
+            <button onclick = "window.open('apod.html','_self')">1. Astronomy Picture of the Day</button>
+
+        </div>
+
+
+        <div class="concept">
+            <button onclick="toggleContent(this)">2. Upcoming Astronomical Events</button>
+
+        </div>
+        <div class="concept">
+            <button onclick="window.open('cel-objects.html','_self')">3. Different Celestial Objects</button>
+
+        </div>
+
+        <div class="concept">
+            <button onclick="window.open('astro-events.html','_self')">4.Different Astronomical Events</button>
+
+        </div>
+
+
+        <div class="concept">
+            <button onclick="toggleContent(this)">5. Solar Eclipse 3D Simulation</button>
+
+        </div>
+
+
+        <div class="concept">
+            <button onclick="toggleContent(this)">6. Lunar Eclipse 3D Simulation</button>
+ 
+        </div>
+
+
+        <div class="concept">
+            <button onclick = "window.open('iss.html','_self')">7. International Space Station (ISS)</button>
+
+        </div>
+
+
+    </section>
+
+</body>
+</html>
