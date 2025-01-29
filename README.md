@@ -4,13 +4,13 @@ Astro is as one stop platform for learning for space, it has a vibrant and simpl
 Some of the feautures are listed below - 
 
 1) Astronomical picture of the day - It is a wrapper for NASA APOD api, which gives picture of the day.
-![alt text](https://github.com/Manan-Coder/Astro/blob/main/apod.png)
+![apod](https://cloud-2z4nj9a62-hack-club-bot.vercel.app/0apod.png)
 
 2) Astronomical Events - You can get info about different types of astronomical events like ecplipses and meteor showers....
-![alt text](https://github.com/Manan-Coder/Astro/blob/main/ast-events.png?raw=true)
+![events](https://cloud-2z4nj9a62-hack-club-bot.vercel.app/1ast-events.png)
 
 3) Celestial Objects - You can get info about different types of astronomical events like ecplipses and meteor showers....
-![alt text](https://github.com/Manan-Coder/Astro/blob/main/cel-objects.png?raw=true)
+![objects](https://cloud-2z4nj9a62-hack-club-bot.vercel.app/2cel-objects.png)
 
 4) Solar Eclipse Simulation - This is a simulation of a Solar eclipse made using ThreeJS.
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
