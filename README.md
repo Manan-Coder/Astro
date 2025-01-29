@@ -4,7 +4,7 @@ Astro is as one stop platform for learning for space, it has a vibrant and simpl
 Some of the feautures are listed below - 
 
 1) Astronomical picture of the day - It is a wrapper for NASA APOD api, which gives picture of the day.
-![alt text](https://github.com/Manan-Coder/Astro/blob/main/apod.png?raw=true)
+![alt text](https://github.com/Manan-Coder/Astro/blob/main/apod.png)
 
 2) Astronomical Events - You can get info about different types of astronomical events like ecplipses and meteor showers....
 ![alt text](https://github.com/Manan-Coder/Astro/blob/main/ast-events.png?raw=true)
